@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details - Kerala Destinations</title>
+    <link rel="stylesheet" href="hustle.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kerala Travel Contact Information</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2>Select a Destination</h2>
+        <select id="destination-select" onchange="showContactDetails()">
+            <option value="">-- Select a Destination --</option>
+            <option value="munnar">Munnar</option>
+            <option value="kochi">Kochi</option>
+            <option value="alleppey">Alleppey</option>
+            <option value="wayanad">Wayanad</option>
+        </select>
+    </section>
+
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <div id="contact-container"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kerala Travel Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

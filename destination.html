@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Travel Destinations</title>
+    <link rel="stylesheet" href="hustle.css">
+</head>
+<body>
+
+    <header>
+        <h1>Explore Kerala Destinations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search">
+        <h2>Select a City</h2>
+        <select id="city-select" onchange="loadSubDestinations()">
+            <option value="">-- Select a City --</option>
+            <option value="munnar">Munnar</option>
+            <option value="alleppey">Alleppey</option>
+            <option value="kochi">Kochi</option>
+            <option value="wayanad">Wayanad</option>
+        </select>
+
+        <h2>Select a Destination</h2>
+        <select id="destination-select" onchange="showDestinationDetails()">
+            <option value="">-- Select a Destination --</option>
+        </select>
+    </section>
+
+    <section id="destination-details">
+        <h2>Destination Details</h2>
+        <div id="destination-info"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kerala Travel Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
